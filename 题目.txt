@@ -1,0 +1,46 @@
+Assignment1：
+kNN：
+1. 用两个循环、一个循环、无循环（向量化）实现距离计算
+2. 实现预测
+3. 用交叉验证进行k的选择（使用训练集）
+SVM：
+1. 用两个循环、无循环（向量化）实现损失和梯度的计算
+2. SGD优化梯度矩阵dW，并实现训练和预测（和Softmax共用）
+3. 进行learning rate和正则化强度的选择（使用训练集和验证集）
+4. 输出权重矩阵W
+Softmax：
+1. 用两个循环、无循环（向量化）实现损失和梯度的计算
+2. 进行learning rate和正则化强度的选择（使用训练集和验证集）
+3. 输出权重矩阵
+Two-layer Neural Network
+1. 用向量化实现得分、损失和梯度的计算
+2. SGD优化梯度矩阵，并实现训练和预测
+3. 进行learning rate、正则化强度和隐藏层神经元数的选择
+4. 输出权重矩阵
+Image Features：
+1. 对输入图像进行特征选择
+2. 再使用之前的SVM和神经网络进行训练和预测，正确率明显提高
+Assignment2：
+Fully-connected Neural Network
+1. 完成Affine层、ReLU层的前向计算和后向梯度计算
+2. 将各个层堆积起来成为Two-layer Neural Network，实现每个层的前向计算和后向梯度计算
+3. 使用更高层的Solver对象，将以上内容组合起来
+4. 实现Fully-connected Neural Network的loss和梯度计算（包含BN层和Dropout层）
+5. 调参，调整learning rate的值使模型在小数据正确率到达100%过拟合
+6. 完成更有效的参数更新方式：SGD + Momentum、SGD + RMSProp、SGD + Adam
+Convolutional Networks:
+1. 完成卷积层的前向计算和后向梯度计算（后向传播存疑）
+2. 完成Max Pooling层的前向计算和后向梯度计算
+3. 完成CNN的初始化和LOSS计算
+4. 完成Spatial Batch Normalization的前向计算和后向梯度计算
+5. 训练出一个足够好的模型（有很多关于如何训练的注意事项）
+Assignment3：
+1. 完成一个timestep的RNN的前向计算和后向梯度计算
+2. 完成RNN的前向计算和后向梯度计算
+3. 完成词嵌入的前向计算和后向梯度计算
+4. 将各层连接起来实现用RNN对图片配文字
+5. 完成一个timestep的LSTM的前向计算和后向梯度计算
+6. 完成LSTM的前向计算和后向梯度计算
+
+Reference:
+https://blog.csdn.net/qq_26414307/article/details/79318555
